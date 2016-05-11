@@ -25,6 +25,18 @@ restaurants_attributes = [
     address:      "route de Suresnes 75016 Paris",
     phone_number:  "01.47.08.40.71",
     category: "japanese"
+  },
+  {
+    name:         "L'entrecote",
+    address:      "rue Marbeuf 75008 Paris",
+    phone_number:  "01.48.23.30.01",
+    category: "french"
+  },
+  {
+    name:         "Chez Mr Wong",
+    address:      "Boulevard de Grenelle 75015 Paris",
+    phone_number:  "01.54.67.22.11",
+    category: "chinese"
   }
 ]
 restaurants_attributes.each { |param| Restaurant.create!(param) }
