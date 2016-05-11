@@ -1,0 +1,8 @@
+<h1> Write your new review on the restaurant : <%= @restaurant.name.capitalize%></h1>
+
+<%= simple_form_for([@restaurant, @review]) do |f| %>
+  <%= f.input :content, label: "Give us your feedback : " %>
+  <%= f.input :rating, collection: 0..5, prompt: "Give a mark"%>
+
+  <%= f.submit 'Add a review' %>
+<% end%>

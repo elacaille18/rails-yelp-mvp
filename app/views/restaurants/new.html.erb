@@ -1,5 +1,14 @@
 <%= simple_form_for(@restaurant) do |f| %>
   <%= f.error_notification %>
+  <% if @restaurant.errors.any? %>
+    <div id="error_explanation">
+      <ul>
+      <% @restaurant.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
 
   <%= f.input :name, label: "Enter the name of the restaurant" %>
   <%= f.input :address, label: "Address"%>

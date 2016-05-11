@@ -27,7 +27,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'bcrypt', '~> 3.1.7'
 
 # use of Simple Form
+# gem 'simple_form'
+
+# Front end Gems
+gem 'bootstrap-sass'
+gem 'font-awesome-sass'
 gem 'simple_form'
+gem 'autoprefixer-rails'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
